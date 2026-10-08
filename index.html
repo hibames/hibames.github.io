@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hiba Messai | Data &amp; AI engineering student</title>
+<meta name="description" content="Final-year engineering student at ENSTA-B. Geospatial data platforms, applied AI and energy. Seeking a final-year (PFE) internship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --surface:#f4f6fa; --ink:#1b2430; --muted:#586374;
+  --line:#d5dbe5; --accent:#2447c9; --accent-soft:#e8edfb; --ok:#17603f; --ok-soft:#e3f3ea;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+header.top .wrap{padding-top:56px;padding-bottom:40px}
+h1{font:600 clamp(2.2rem,6vw,3.4rem)/1.05 var(--sans);letter-spacing:-.02em;margin:0 0 10px}
+.role{font-size:1.2rem;color:var(--ink);margin:0 0 18px;max-width:46ch}
+.status{display:inline-block;background:var(--ok-soft);color:var(--ok);border:1px solid #b9dfc9;border-radius:999px;padding:4px 14px;font-weight:500;font-size:.95rem}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;padding:0;list-style:none}
+.links a{font-weight:500}
+main section{padding:44px 0 4px}
+h2{font:600 1.5rem/1.2 var(--sans);margin:0 0 6px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 22px;max-width:62ch}
+.card{display:grid;grid-template-columns:max-content 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0}
+.card dt,.card dd{margin:0;padding:11px 16px;border-top:1px solid var(--line)}
+.card dt:first-of-type,.card dd:first-of-type{border-top:0}
+.card dt{background:var(--surface);color:var(--muted);font-weight:500;border-right:1px solid var(--line)}
+.card dd{min-width:0}
+.mono{font-family:var(--mono);font-size:.88em}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.tags li{font:400 .8rem/1 var(--mono);background:var(--accent-soft);color:#1c389f;padding:5px 9px;border-radius:5px}
+.repo{border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:0 0 14px}
+.repo h3{margin:0 0 4px;font:500 1.05rem/1.3 var(--mono);word-break:break-word}
+.repo h3 .owner{color:var(--muted)}
+.repo p{margin:6px 0 0;max-width:68ch}
+.result{margin:8px 0 0;font-weight:500}
+.job{display:grid;grid-template-columns:1fr auto;gap:2px 20px;padding:18px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:4px}
+.job h3{margin:0;font:600 1.05rem/1.3 var(--sans)}
+.job .when{color:var(--muted);white-space:nowrap}
+.job .where{grid-column:1/-1;color:var(--muted);margin:0}
+.job ul{grid-column:1/-1;margin:8px 0 0;padding-left:1.15em}
+.job li{margin:3px 0;max-width:72ch}
+.skills dd{display:flex;flex-wrap:wrap;gap:6px}
+.skills dd span{font:400 .88rem/1 var(--mono);border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:var(--paper)}
+footer{margin-top:56px;border-top:1px solid var(--line);background:var(--surface)}
+footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:600px){
+  .card{grid-template-columns:1fr}
+  .card dt{border-right:0;padding-bottom:2px}
+  .card dd{border-top:0;padding-top:2px}
+  .card dt:not(:first-of-type){border-top:1px solid var(--line)}
+  .job{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header.top,footer{background:none}a{color:inherit}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Hiba Messai</h1>
+    <p class="role">I build data platforms and applied AI for energy and urban data. Final-year engineering student at ENSTA-B, Tunisia.</p>
+    <span class="status">Looking for a final-year (PFE) internship</span>
+    <ul class="links">
+      <li><a href="https://github.com/hibames">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/hiba-messai-646960245">LinkedIn</a></li>
+      <li><a href="mailto:Hiba.MESSAI@enstab.ucar.tn">Hiba.MESSAI@enstab.ucar.tn</a></li>
+      <li><a href="Hiba_Messai_CV_DataEngineering_1page.pdf">Download my CV (PDF)</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-labelledby="about">
+    <h2 id="about">About</h2>
+    <p class="lede">Overview of what I work on, how to reach me and what I am looking for.</p>
+    <dl class="card">
+      <dt>Focus</dt><dd>Data engineering, geospatial data platforms, applied machine learning</dd>
+      <dt>Domains</dt><dd>Energy and solar forecasting, urban open data, industrial diagnostics, medical imaging</dd>
+      <dt>Stack</dt><dd>Python, PostgreSQL, SQL, FastAPI, Docker Compose, Pytest, TensorFlow/Keras, Scikit-Learn, LangChain</dd>
+      <dt>Looking for</dt><dd>A final-year (PFE) internship in data engineering or applied AI, ideally with geospatial or energy applications</dd>
+      <dt>Education</dt><dd>Engineering degree in Advanced Technologies, AI &amp; Energy Systems, ENSTA-B (2024 to 2027)</dd>
+      <dt>Location</dt><dd>Ben Arous, Tunisia. Remote-friendly: I worked remotely with a Canadian startup.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="work">
+    <h2 id="work">Experience</h2>
+    <p class="lede">Three internships, from solar forecasting to a geospatial data platform.</p>
+
+    <article class="job">
+      <h3>Geospatial &amp; Energy Data Engineering Intern</h3><span class="when">2026</span>
+      <p class="where">Urban Pulse, Canadian startup (remote)</p>
+      <ul>
+        <li>Containerized a multi-service data platform (Docker Compose, PostgreSQL, FastAPI, Streamlit) for a business opportunity finder aimed at retailers, franchisors and investors.</li>
+        <li>Ingested 37 municipal open datasets and kept 7 months of historical snapshots with SCD Type 2 pipelines.</li>
+        <li>Built FastAPI endpoints, an SLA monitor for ingestion latency, and spatial analysis (cKDTree heatmaps, Dijkstra routing).</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>AI Diagnostic &amp; GenAI Systems Intern</h3><span class="when">2026</span>
+      <p class="where">Sagemcom, Tunisia</p>
+      <ul>
+        <li>Built a diagnostic assistant for optical test benches: hybrid RAG over a 56-failure knowledge base and a tool-calling agent that opens maintenance tickets.</li>
+        <li>Wrote 16 Pytest unit tests covering retrieval precision, agent responses and latency.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>Machine Learning &amp; Solar Energy Intern</h3><span class="when">Jul to Aug 2025</span>
+      <p class="where">TunBraille, startup, Tunisia</p>
+      <ul>
+        <li>Predicted solar panel output from sensor and weather data. Random Forest reached R² = 0.94 (MAE 9.5) against 0.84 for the linear baseline.</li>
+        <li>Turned the forecasts into recommendations (cleaning, panel tilt, battery scheduling) with an estimated 8 to 12% yield gain in simulation.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <p class="lede">Each project has its own repository with the code and a README.</p>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/Nonlinear-System-Identification-Using-Autoencoders-for-MPC">Nonlinear-System-Identification-Using-Autoencoders-for-MPC</a></h3>
+      <p>Final-year project, team of two. Implements the Partial Predictive Encoder (Masti and Bemporad, Automatica 2021): an autoencoder that learns a latent state, a transition model and an output decoder from input/output data, then drives a closed-loop MPC.</p>
+      <p class="result">Mean Best Fit Ratio of 0.987 and 0.980 on two nonlinear benchmark systems.</p>
+      <ul class="tags"><li>Python</li><li>Deep learning</li><li>MPC</li><li>System identification</li></ul>
+    </article>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/pneumonia-detection-">pneumonia-detection-</a></h3>
+      <p>Synthesis project at ENSTA-B, team of two. End-to-end pipeline on about 5,900 chest X-rays: preprocessing, augmentation, class balancing, then Random Forest, XGBoost, a custom CNN and five pretrained CNNs compared. EfficientNetB0 was fine-tuned and integrated into a desktop app.</p>
+      <p class="result">About 91 to 92% accuracy across the compared models.</p>
+      <ul class="tags"><li>TensorFlow/Keras</li><li>OpenCV</li><li>Scikit-Learn</li><li>Transfer learning</li></ul>
+    </article>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/quiz-generator-ai">quiz-generator-ai</a></h3>
+      <p>Turns a PDF into a quiz with a retrieval pipeline over vector embeddings. Chunking and prompts were tuned to limit hallucinations.</p>
+      <ul class="tags"><li>LangChain</li><li>Gemini API</li><li>Streamlit</li><li>RAG</li></ul>
+    </article>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/ChatBot-SAGEM">ChatBot-SAGEM</a></h3>
+      <p>Chatbot prototype for industrial diagnostics, based on retrieval over failure reports.</p>
+      <ul class="tags"><li>Python</li><li>RAG</li><li>Gemini API</li></ul>
+    </article>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <p class="lede">What I use most, grouped by job to be done.</p>
+    <dl class="card skills">
+      <dt>Data pipelines</dt><dd><span>PostgreSQL</span><span>SQL</span><span>ETL/ELT</span><span>SCD Type 2</span><span>SLA monitoring</span></dd>
+      <dt>Backend and ops</dt><dd><span>Python</span><span>FastAPI</span><span>Docker</span><span>Docker Compose</span><span>Pytest</span><span>Git</span></dd>
+      <dt>Geospatial</dt><dd><span>SciPy cKDTree</span><span>Dijkstra</span><span>Heatmaps</span></dd>
+      <dt>Machine learning</dt><dd><span>Scikit-Learn</span><span>TensorFlow/Keras</span><span>PyTorch</span><span>XGBoost</span><span>LSTM</span><span>CNN</span></dd>
+      <dt>Generative AI</dt><dd><span>RAG</span><span>LLM agents</span><span>LangChain</span><span>Gemini API</span></dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p class="lede">I am open to final-year internship offers in data engineering and applied AI. Write to me at <a href="mailto:Hiba.MESSAI@enstab.ucar.tn">Hiba.MESSAI@enstab.ucar.tn</a> or message me on <a href="https://linkedin.com/in/hiba-messai-646960245">LinkedIn</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Hiba Messai, ENSTA-B, Tunisia</span>
+    <span><a href="https://github.com/hibames">github.com/hibames</a></span>
+  </div>
+</footer>
+</body>
+</html>
