@@ -56,6 +56,21 @@ h2{font:600 1.5rem/1.2 var(--sans);margin:0 0 6px;letter-spacing:-.01em}
 .skills dd span{font:400 .88rem/1 var(--mono);border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:var(--paper)}
 footer{margin-top:56px;border-top:1px solid var(--line);background:var(--surface)}
 footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.fig{margin:14px 0 0}
+.fig img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.fig figcaption{color:var(--muted);font-size:.9rem;margin-top:6px;max-width:68ch}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:6px}
+.tbl{width:100%;border-collapse:collapse;margin:12px 0 0;font-size:.95rem}
+.tbl caption{text-align:left;color:var(--muted);padding-bottom:6px}
+.tbl th,.tbl td{text-align:left;padding:7px 12px;border-top:1px solid var(--line)}
+.tbl thead th{background:var(--surface);border-top:1px solid var(--line);font-weight:500}
+.tbl td.n,.tbl th.n{text-align:right;font-variant-numeric:tabular-nums}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.tbl-wrap .tbl{margin:0}
+.cta{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:26px 24px}
+.cta h2{margin-bottom:8px}
+.cta ul{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 24px}
+.cta li span{color:var(--muted);display:block;font-size:.88rem}
 @media (max-width:600px){
   .card{grid-template-columns:1fr}
   .card dt{border-right:0;padding-bottom:2px}
@@ -77,6 +92,7 @@ footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:fle
       <li><a href="https://github.com/hibames">GitHub</a></li>
       <li><a href="https://linkedin.com/in/hiba-messai-646960245">LinkedIn</a></li>
       <li><a href="mailto:Hiba.MESSAI@enstab.ucar.tn">Hiba.MESSAI@enstab.ucar.tn</a></li>
+      <li><a href="tel:+21656121942">+216 56 121 942</a></li>
       <li><a href="Hiba_Messai_CV_DataEngineering_1page.pdf">Download my CV (PDF)</a></li>
     </ul>
   </div>
@@ -85,21 +101,28 @@ footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:fle
 <main class="wrap">
   <section aria-labelledby="about">
     <h2 id="about">About</h2>
-    <p class="lede">Overview of what I work on, how to reach me and what I am looking for.</p>
+    <p class="lede">What I work on, and what I am looking for.</p>
     <dl class="card">
       <dt>Focus</dt><dd>Data engineering, geospatial data platforms, applied machine learning</dd>
       <dt>Domains</dt><dd>Energy and solar forecasting, urban open data, industrial diagnostics, medical imaging</dd>
-      <dt>Stack</dt><dd>Python, PostgreSQL, SQL, FastAPI, Docker Compose, Pytest, TensorFlow/Keras, Scikit-Learn, LangChain</dd>
       <dt>Looking for</dt><dd>A final-year (PFE) internship in data engineering or applied AI, ideally with geospatial or energy applications</dd>
-      <dt>Education</dt><dd>Engineering degree in Advanced Technologies, AI &amp; Energy Systems, ENSTA-B (2024 to 2027)</dd>
       <dt>Location</dt><dd>Ben Arous, Tunisia. Remote-friendly: I worked remotely with a Canadian startup.</dd>
     </dl>
   </section>
 
-  <section aria-labelledby="work">
-    <h2 id="work">Experience</h2>
-    <p class="lede">Three internships, from solar forecasting to a geospatial data platform.</p>
+  <section aria-labelledby="edu">
+    <h2 id="edu">Academic background</h2>
+    <p class="lede">Engineering school, after two years of preparatory classes.</p>
+    <dl class="card">
+      <dt>2024 to 2027</dt><dd>Engineering degree in Advanced Technologies, specialization in AI and Energy Systems. ENSTA-B, Borj Cedria, Tunisia.</dd>
+      <dt>2022 to 2024</dt><dd>Preparatory cycle in Mathematics and Physics. ISSAT Mahdia, Tunisia.</dd>
+      <dt>2021</dt><dd>Baccalaureate in Mathematics. Tunisia.</dd>
+    </dl>
+  </section>
 
+  <section aria-labelledby="work">
+    <h2 id="work">Internships</h2>
+    <p class="lede">Three internships, from solar forecasting to a geospatial data platform.</p>
     <article class="job">
       <h3>Geospatial &amp; Energy Data Engineering Intern</h3><span class="when">2026</span>
       <p class="where">Urban Pulse, Canadian startup (remote)</p>
@@ -109,7 +132,6 @@ footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:fle
         <li>Built FastAPI endpoints, an SLA monitor for ingestion latency, and spatial analysis (cKDTree heatmaps, Dijkstra routing).</li>
       </ul>
     </article>
-
     <article class="job">
       <h3>AI Diagnostic &amp; GenAI Systems Intern</h3><span class="when">2026</span>
       <p class="where">Sagemcom, Tunisia</p>
@@ -118,41 +140,49 @@ footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:fle
         <li>Wrote 16 Pytest unit tests covering retrieval precision, agent responses and latency.</li>
       </ul>
     </article>
-
     <article class="job">
       <h3>Machine Learning &amp; Solar Energy Intern</h3><span class="when">Jul to Aug 2025</span>
       <p class="where">TunBraille, startup, Tunisia</p>
       <ul>
-        <li>Predicted solar panel output from sensor and weather data. Random Forest reached R² = 0.94 (MAE 9.5) against 0.84 for the linear baseline.</li>
-        <li>Turned the forecasts into recommendations (cleaning, panel tilt, battery scheduling) with an estimated 8 to 12% yield gain in simulation.</li>
+        <li>Predicted solar panel output from weather and sensor data (irradiance, temperature, humidity, time features) with an ESP32 acquisition setup.</li>
+        <li>Turned the forecasts into recommendations (cleaning, panel tilt, battery scheduling) with an estimated 8 to 12% yield gain in simulated conditions.</li>
       </ul>
+      <div class="tbl-wrap" style="grid-column:1/-1;margin-top:10px">
+        <table class="tbl">
+          <caption>Model comparison on the test set (error in the unit of the measured power)</caption>
+          <thead><tr><th>Model</th><th class="n">MAE</th><th class="n">RMSE</th><th class="n">R²</th></tr></thead>
+          <tbody>
+            <tr><td>Linear regression</td><td class="n">17.2</td><td class="n">24.8</td><td class="n">0.84</td></tr>
+            <tr><td>Random Forest (kept for embedded use)</td><td class="n">9.5</td><td class="n">13.7</td><td class="n">0.94</td></tr>
+            <tr><td>LSTM</td><td class="n">8.7</td><td class="n">12.1</td><td class="n">0.95</td></tr>
+          </tbody>
+        </table>
+      </div>
     </article>
+  </section>
+
+  <section aria-labelledby="tools">
+    <h2 id="tools">Software and tools</h2>
+    <p class="lede">What I use, grouped by what it is for.</p>
+    <dl class="card skills">
+      <dt>Languages</dt><dd><span>Python</span><span>SQL</span><span>C</span><span>Java</span><span>MATLAB</span><span>R</span></dd>
+      <dt>Data and backend</dt><dd><span>PostgreSQL</span><span>FastAPI</span><span>Docker</span><span>Docker Compose</span><span>Pytest</span><span>Git and GitHub</span></dd>
+      <dt>Data analysis</dt><dd><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Streamlit</span></dd>
+      <dt>Geospatial</dt><dd><span>SciPy cKDTree</span><span>Dijkstra</span><span>Heatmaps</span></dd>
+      <dt>Machine learning</dt><dd><span>Scikit-Learn</span><span>TensorFlow/Keras</span><span>PyTorch</span><span>XGBoost</span><span>OpenCV</span></dd>
+      <dt>Generative AI</dt><dd><span>LangChain</span><span>Gemini API</span><span>RAG</span><span>LLM agents</span></dd>
+      <dt>Environment</dt><dd><span>VS Code</span><span>Jupyter Notebook</span><span>ESP32 sensors</span></dd>
+    </dl>
   </section>
 
   <section aria-labelledby="projects">
     <h2 id="projects">Projects</h2>
     <p class="lede">Each project has its own repository with the code and a README.</p>
-
-    <article class="repo">
-      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/Nonlinear-System-Identification-Using-Autoencoders-for-MPC">Nonlinear-System-Identification-Using-Autoencoders-for-MPC</a></h3>
-      <p>Final-year project, team of two. Implements the Partial Predictive Encoder (Masti and Bemporad, Automatica 2021): an autoencoder that learns a latent state, a transition model and an output decoder from input/output data, then drives a closed-loop MPC.</p>
-      <p class="result">Mean Best Fit Ratio of 0.987 and 0.980 on two nonlinear benchmark systems.</p>
-      <ul class="tags"><li>Python</li><li>Deep learning</li><li>MPC</li><li>System identification</li></ul>
-    </article>
-
-    <article class="repo">
-      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/pneumonia-detection-">pneumonia-detection-</a></h3>
-      <p>Synthesis project at ENSTA-B, team of two. End-to-end pipeline on about 5,900 chest X-rays: preprocessing, augmentation, class balancing, then Random Forest, XGBoost, a custom CNN and five pretrained CNNs compared. EfficientNetB0 was fine-tuned and integrated into a desktop app.</p>
-      <p class="result">About 91 to 92% accuracy across the compared models.</p>
-      <ul class="tags"><li>TensorFlow/Keras</li><li>OpenCV</li><li>Scikit-Learn</li><li>Transfer learning</li></ul>
-    </article>
-
     <article class="repo">
       <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/quiz-generator-ai">quiz-generator-ai</a></h3>
-      <p>Turns a PDF into a quiz with a retrieval pipeline over vector embeddings. Chunking and prompts were tuned to limit hallucinations.</p>
+      <p>Turns a PDF into a quiz. A retrieval pipeline over vector embeddings finds the right passages, and chunking and prompts were tuned to limit hallucinations.</p>
       <ul class="tags"><li>LangChain</li><li>Gemini API</li><li>Streamlit</li><li>RAG</li></ul>
     </article>
-
     <article class="repo">
       <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/ChatBot-SAGEM">ChatBot-SAGEM</a></h3>
       <p>Chatbot prototype for industrial diagnostics, based on retrieval over failure reports.</p>
@@ -160,21 +190,60 @@ footer .wrap{padding-top:26px;padding-bottom:30px;color:var(--muted);display:fle
     </article>
   </section>
 
-  <section aria-labelledby="skills">
-    <h2 id="skills">Skills</h2>
-    <p class="lede">What I use most, grouped by job to be done.</p>
-    <dl class="card skills">
-      <dt>Data pipelines</dt><dd><span>PostgreSQL</span><span>SQL</span><span>ETL/ELT</span><span>SCD Type 2</span><span>SLA monitoring</span></dd>
-      <dt>Backend and ops</dt><dd><span>Python</span><span>FastAPI</span><span>Docker</span><span>Docker Compose</span><span>Pytest</span><span>Git</span></dd>
-      <dt>Geospatial</dt><dd><span>SciPy cKDTree</span><span>Dijkstra</span><span>Heatmaps</span></dd>
-      <dt>Machine learning</dt><dd><span>Scikit-Learn</span><span>TensorFlow/Keras</span><span>PyTorch</span><span>XGBoost</span><span>LSTM</span><span>CNN</span></dd>
-      <dt>Generative AI</dt><dd><span>RAG</span><span>LLM agents</span><span>LangChain</span><span>Gemini API</span></dd>
-    </dl>
+  <section aria-labelledby="pfa">
+    <h2 id="pfa">End-of-year projects (PFA)</h2>
+    <p class="lede">Two projects done at ENSTA-B in a team of two, with a written report for each.</p>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/pneumonia-detection-">pneumonia-detection-</a></h3>
+      <p>Synthesis project, presented to a jury in May 2025. The goal: detect pneumonia on pediatric chest X-rays and compare classical machine learning with deep learning. The pipeline covers resizing to 224 x 224, normalization, augmentation, class balancing, stratified splits, then training and evaluation. EfficientNetB0 was fine-tuned and integrated into a desktop application.</p>
+      <p class="result">Random Forest and XGBoost reach about 92% accuracy with ROC AUC near 0.98; the custom CNN reaches 91% (AUC 0.96).</p>
+      <div class="figs">
+        <figure class="fig"><img src="images/pneumonia-roc.png" alt="ROC curves of Random Forest, XGBoost and a CNN, with AUC 0.98, 0.98 and 0.96" loading="lazy"><figcaption>ROC curves on the test set: Random Forest (AUC 0.98), XGBoost (0.98), CNN (0.96).</figcaption></figure>
+        <figure class="fig"><img src="images/pneumonia-accuracy.png" alt="Bar chart of accuracy for five pretrained CNNs, from VGG16 at 91.71 percent to DenseNet at 87.15 percent" loading="lazy"><figcaption>Five pretrained CNNs compared with transfer learning. VGG16 is the most accurate (91.71%).</figcaption></figure>
+      </div>
+      <ul class="tags"><li>TensorFlow/Keras</li><li>OpenCV</li><li>Scikit-Learn</li><li>XGBoost</li><li>Transfer learning</li></ul>
+    </article>
+
+    <article class="repo">
+      <h3><span class="owner">hibames/</span><a href="https://github.com/hibames/Nonlinear-System-Identification-Using-Autoencoders-for-MPC">Nonlinear-System-Identification-Using-Autoencoders-for-MPC</a></h3>
+      <p>Final-year project. I implemented the Partial Predictive Encoder (Masti and Bemporad, Automatica 2021): an autoencoder that learns a latent state, a transition model and an output decoder from input/output data. It was identified on two nonlinear benchmark systems, then used as the state estimator of a closed-loop MPC, with no extra observer.</p>
+      <p class="result">Mean Best Fit Ratio of 0.987 and 0.980 over six independent runs per system.</p>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <caption>Open-loop identification, Best Fit Ratio (BFR), six runs per system</caption>
+          <thead><tr><th>System</th><th class="n">Mean</th><th class="n">Min</th><th class="n">Max</th></tr></thead>
+          <tbody>
+            <tr><td>Hammerstein-Wiener</td><td class="n">0.987</td><td class="n">0.984</td><td class="n">0.990</td></tr>
+            <tr><td>Two-tank (partially observable)</td><td class="n">0.980</td><td class="n">0.959</td><td class="n">0.990</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="fig"><img src="images/mpc-closed-loop.png" alt="Closed-loop simulation: the output follows a sinusoidal reference, with small oscillations of the input near zero" loading="lazy"><figcaption>Closed-loop MPC on the Hammerstein-Wiener system: the output (orange) follows the reference (green). The input (blue) oscillates near zero crossings, the main limitation I identified and proposed to reduce with an input-rate penalty.</figcaption></figure>
+      <ul class="tags"><li>Python</li><li>Deep learning</li><li>MPC</li><li>System identification</li></ul>
+    </article>
   </section>
 
-  <section aria-labelledby="contact">
-    <h2 id="contact">Contact</h2>
-    <p class="lede">I am open to final-year internship offers in data engineering and applied AI. Write to me at <a href="mailto:Hiba.MESSAI@enstab.ucar.tn">Hiba.MESSAI@enstab.ucar.tn</a> or message me on <a href="https://linkedin.com/in/hiba-messai-646960245">LinkedIn</a>.</p>
+  <section aria-labelledby="interests">
+    <h2 id="interests">Interests</h2>
+    <p class="lede">What I care about outside of coursework.</p>
+    <dl class="card">
+      <dt>Sustainability</dt><dd>Energy transition, renewable energy, green business and responsible AI.</dd>
+      <dt>Learning in public</dt><dd>I publish my projects on GitHub and Hugging Face, and I document them.</dd>
+    </dl>
+    <!-- Associative life: add clubs, volunteering, hackathons here, for example:
+    <dl class="card"><dt>Club or association</dt><dd>Your role and what you did.</dd></dl> -->
+  </section>
+
+  <section class="cta" aria-labelledby="contact">
+    <h2 id="contact">Let's work together</h2>
+    <p class="lede" style="margin:0">I am looking for a final-year (PFE) internship in data engineering and applied AI. Write to me, call me, or look at my code.</p>
+    <ul>
+      <li><span>Email</span><a href="mailto:Hiba.MESSAI@enstab.ucar.tn">Hiba.MESSAI@enstab.ucar.tn</a></li>
+      <li><span>Phone</span><a href="tel:+21656121942">+216 56 121 942</a></li>
+      <li><span>LinkedIn</span><a href="https://linkedin.com/in/hiba-messai-646960245">linkedin.com/in/hiba-messai-646960245</a></li>
+      <li><span>GitHub</span><a href="https://github.com/hibames">github.com/hibames</a></li>
+    </ul>
   </section>
 </main>
 
